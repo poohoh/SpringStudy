@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-@Controller
+/*@Controller*/
 public class HelloController {
     @RequestMapping("hello")
     public String hello(Model model) {

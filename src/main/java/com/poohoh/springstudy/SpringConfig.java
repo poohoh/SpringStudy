@@ -1,6 +1,7 @@
 package com.poohoh.springstudy;
 
 import com.poohoh.springstudy.repository.JdbcMemberRepository;
+import com.poohoh.springstudy.repository.JdbcTemplateMemberRepository;
 import com.poohoh.springstudy.repository.MemberRepository;
 import com.poohoh.springstudy.repository.MemoryMemberRepository;
 import com.poohoh.springstudy.service.MemberService;
@@ -31,7 +32,7 @@ public class SpringConfig {
     @Bean
     public MemberRepository memberRepository() {
         // return new MemoryMemberRepository();
-        return new JdbcMemberRepository(dataSource);
+        // return new JdbcMemberRepository(dataSource);
+        return new JdbcTemplateMemberRepository(dataSource);
     }
-    
 }
